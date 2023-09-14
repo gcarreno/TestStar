@@ -46,7 +46,7 @@ Testing Google Translate with Lazarus/FPC.
 
 Repository to test and learn how to use the many logging choices in Lazarus
 
-## List of options
+#### List of options
 
 Tested:
 - LazLogger: https://wiki.freepascal.org/LazLogger (Comes with Lazarus)
@@ -70,7 +70,7 @@ Maybe:
 - ooLog: https://github.com/VencejoSoftware/ooLog
 - datalogger: https://github.com/dliocode/datalogger
 
-## LazLogger
+#### LazLogger
 
 pros:
 - Part of the FCL
@@ -82,7 +82,7 @@ cons:
 
 For more information on this option: [LazLogger README](https://github.com/gcarreno/TestLazarusLogging/blob/main/LazLogger/README.md)
 
-## TEventLog
+#### TEventLog
 
 pros:
 - Part of the LCL
@@ -95,3 +95,21 @@ todo:
 - Linux: Need to see if there is some difference geared towards a Linux system log
 
 For more information on this option: [TEventLog README](https://github.com/gcarreno/TestLazarusLogging/blob/main/TEventLog/README.md)
+
+### Linux Distribution Information
+
+[![Build Status](https://github.com/gcarreno/TestLinuxDistInfo/workflows/build/badge.svg?branch=main)](https://github.com/gcarreno/TestLinuxDistInfo/actions)
+[![Supports Linux](https://img.shields.io/badge/support-Linux-yellow?logo=Linux)](https://github.com/gcarreno/TestLinuxDistInfo/releases/latest)
+[![License](https://img.shields.io/github/license/gcarreno/TestLinuxDistInfo)](https://github.com/gcarreno/TestLinuxDistInfo/blob/master/LICENSE)
+[![Latest Release](https://img.shields.io/github/v/release/gcarreno/TestLinuxDistInfo?label=latest%20release)](https://github.com/gcarreno/TestLinuxDistInfo/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/gcarreno/TestLinuxDistInfo/total)](https://github.com/gcarreno/TestLinuxDistInfo/releases)
+
+- [GitHub Repository](https://github.com/gcarreno/TestLinuxDistInfo)
+
+Searches for the various methods to obtain information about the current installed distro.
+
+Presents the options found and allows to query each one individually.
+
+#### Screenshot
+
+![Linux Dark Theme v0.1.1](https://github.com/gcarreno/TestLinuxDistInfo/blob/main/img/LinuxDarkTheme-v0.1.1.png)
