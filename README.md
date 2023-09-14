@@ -129,3 +129,12 @@ Program to test 2 Markdown libraries:
 
 - [pasHTMLdown](https://github.com/BeRo1985/pashtmldown)
 - [delphi-markdown](https://github.com/grahamegrieve/delphi-markdown)
+
+### QR Code
+
+- [GitHub Repository](https://github.com/gcarreno/TestQRCode)
+
+Program to test two Lazarus QR Code generation libs, available on OPM:
+
+* LazBarcodes
+* QRCodeGenLib
