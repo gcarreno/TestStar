@@ -1,10 +1,12 @@
 # Test 🌟
 
-A directory of all my Test repositories
+A directory of all my Object Pascal Test repositories.
 
-# The List
+I hope this will help someone with my captured knowledge on the below subjects.
 
-## Test Application Demo
+## The List
+
+### Test Application Demo
 
 - [Repository](https://github.com/gcarreno/TestApplicationDemo)
 
@@ -18,3 +20,8 @@ It includes:
 - The use of `GetAppConfigFile()` to get the app's default file customised for Linux/Windows
 - A way to have different short cuts for exit in Linux(CTRL+Q) and Windows(ALT+X)
 
+### Test Download with Progress Bar
+
+- [Repository](https://github.com/gcarreno/TestDownloadProgressBar)
+
+Example of `fphttpclient` with a progress bar.
