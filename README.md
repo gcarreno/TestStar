@@ -27,9 +27,6 @@ It includes:
 Example of `fphttpclient` with a progress bar.
 
 ### Google Translate
-
-- [GitHub Repository](https://github.com/gcarreno/TestGoogleTranslate)
-
 [![Build Status](https://github.com/gcarreno/TestGoogleTranslate/workflows/build/badge.svg?branch=main)](https://github.com/gcarreno/TestGoogleTranslate/actions)
 [![Supports Windows](https://img.shields.io/badge/support-Windows-blue?logo=Windows)](https://github.com/gcarreno/TestGoogleTranslate/releases/latest)
 [![Supprts Linux](https://img.shields.io/badge/support-Linux-yellow?logo=Linux)](https://github.com/gcarreno/TestGoogleTranslate/releases/latest)
@@ -38,5 +35,63 @@ Example of `fphttpclient` with a progress bar.
 [![Latest Release](https://img.shields.io/github/v/release/gcarreno/TestGoogleTranslate?label=latest%20release)](https://github.com/gcarreno/TestGoogleTranslate/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/gcarreno/TestGoogleTranslate/total)](https://github.com/gcarreno/TestGoogleTranslate/releases)
 
+- [GitHub Repository](https://github.com/gcarreno/TestGoogleTranslate)
+
+
 Testing Google Translate with Lazarus/FPC.
 
+### Lazarus Logging
+
+- [GitHub Repository](https://github.com/gcarreno/TestLazarusLogging)
+
+Repository to test and learn how to use the many logging choices in Lazarus
+
+## List of options
+
+Tested:
+- LazLogger: https://wiki.freepascal.org/LazLogger (Comes with Lazarus)
+- TEventLogger: https://wiki.lazarus.freepascal.org/TEventLog (Comes with `fcl-base` package)
+
+Work in Progress:
+- MultiLog: https://wiki.freepascal.org/MultiLog  (OPM)
+  - GitHub: https://github.com/blikblum/multilog
+
+Next:
+- QuickLogger: https://github.com/exilon/QuickLogger
+  - Depends on QuickLib: https://github.com/exilon/QuickLib
+
+Maybe:
+- ExceptionLogger: https://github.com/r3code/lazarus-exception-logger (OPM)
+- Log4Delphi: https://wiki.freepascal.org/Log4Delphi
+  - Author: http://log4delphi.sourceforge.net/index.html
+  - Port for `FPC`: http://sourceforge.net/projects/lazarus-ccr/files/Log4Delphi
+- Log4L: https://github.com/CynicRus/Log4L
+- Renegade Logger: https://github.com/hiraethbbs/Renegade.Logger
+- ooLog: https://github.com/VencejoSoftware/ooLog
+- datalogger: https://github.com/dliocode/datalogger
+
+## LazLogger
+
+pros:
+- Part of the FCL
+- Command line params
+- User defined log groups
+
+cons:
+- Does not have multiple log providers
+
+For more information on this option: [LazLogger README](https://github.com/gcarreno/TestLazarusLogging/blob/main/LazLogger/README.md)
+
+## TEventLog
+
+pros:
+- Part of the LCL
+- Windows: Uses the system log
+
+cons:
+- Does not have multiple log providers
+
+todo:
+- Linux: Need to see if there is some difference geared towards a Linux system log
+
+For more information on this option: [TEventLog README](https://github.com/gcarreno/TestLazarusLogging/blob/main/TEventLog/README.md)
