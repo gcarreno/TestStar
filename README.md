@@ -4,9 +4,7 @@ A directory of all my Object Pascal Test repositories.
 
 I hope this will help someone with my captured knowledge on the below subjects.
 
-## The List
-
-### Test Application Demo
+## Test Application Demo
 
 - [GitHub Repository](https://github.com/gcarreno/TestApplicationDemo)
 
@@ -20,13 +18,14 @@ It includes:
 - The use of `GetAppConfigFile()` to get the app's default file customised for Linux/Windows
 - A way to have different short cuts for exit in Linux(CTRL+Q) and Windows(ALT+X)
 
-### Test Download with Progress Bar
+## Test Download with Progress Bar
 
 - [GitHub Repository](https://github.com/gcarreno/TestDownloadProgressBar)
 
 Example of `fphttpclient` with a progress bar.
 
-### Test Google Translate
+## Test Google Translate
+
 [![Build Status](https://github.com/gcarreno/TestGoogleTranslate/workflows/build/badge.svg?branch=main)](https://github.com/gcarreno/TestGoogleTranslate/actions)
 [![Supports Windows](https://img.shields.io/badge/support-Windows-blue?logo=Windows)](https://github.com/gcarreno/TestGoogleTranslate/releases/latest)
 [![Supprts Linux](https://img.shields.io/badge/support-Linux-yellow?logo=Linux)](https://github.com/gcarreno/TestGoogleTranslate/releases/latest)
@@ -40,13 +39,13 @@ Example of `fphttpclient` with a progress bar.
 
 Testing Google Translate with Lazarus/FPC.
 
-### Test Lazarus Logging
+## Test Lazarus Logging
 
 - [GitHub Repository](https://github.com/gcarreno/TestLazarusLogging)
 
 Repository to test and learn how to use the many logging choices in Lazarus
 
-#### Test List of options
+### List of options
 
 Tested:
 - LazLogger: https://wiki.freepascal.org/LazLogger (Comes with Lazarus)
@@ -70,7 +69,7 @@ Maybe:
 - ooLog: https://github.com/VencejoSoftware/ooLog
 - datalogger: https://github.com/dliocode/datalogger
 
-#### Test LazLogger
+### LazLogger
 
 pros:
 - Part of the FCL
@@ -82,7 +81,7 @@ cons:
 
 For more information on this option: [LazLogger README](https://github.com/gcarreno/TestLazarusLogging/blob/main/LazLogger/README.md)
 
-#### Test TEventLog
+### TEventLog
 
 pros:
 - Part of the LCL
@@ -96,7 +95,7 @@ todo:
 
 For more information on this option: [TEventLog README](https://github.com/gcarreno/TestLazarusLogging/blob/main/TEventLog/README.md)
 
-### Test Linux Distribution Information
+## Test Linux Distribution Information
 
 [![Build Status](https://github.com/gcarreno/TestLinuxDistInfo/workflows/build/badge.svg?branch=main)](https://github.com/gcarreno/TestLinuxDistInfo/actions)
 [![Supports Linux](https://img.shields.io/badge/support-Linux-yellow?logo=Linux)](https://github.com/gcarreno/TestLinuxDistInfo/releases/latest)
@@ -110,11 +109,11 @@ Searches for the various methods to obtain information about the current install
 
 Presents the options found and allows to query each one individually.
 
-#### Test Screenshot
+### Screenshot
 
 ![Linux Dark Theme v0.1.1](https://github.com/gcarreno/TestLinuxDistInfo/blob/main/img/LinuxDarkTheme-v0.1.1.png)
 
-### Test Markdown
+## Test Markdown
 
 [![Build Status](https://github.com/gcarreno/TestMarkdown/workflows/build/badge.svg?branch=main)](https://github.com/gcarreno/TestMarkdown/actions)
 [![Supports Windows](https://img.shields.io/badge/support-Windows-blue?logo=Windows)](https://github.com/gcarreno/TestMarkdown/releases/latest)
@@ -130,7 +129,7 @@ Program to test 2 Markdown libraries:
 - [pasHTMLdown](https://github.com/BeRo1985/pashtmldown)
 - [delphi-markdown](https://github.com/grahamegrieve/delphi-markdown)
 
-### Test QR Code
+## Test QR Code
 
 - [GitHub Repository](https://github.com/gcarreno/TestQRCode)
 
@@ -139,7 +138,7 @@ Program to test two Lazarus QR Code generation libs, available on OPM:
 * LazBarcodes
 * QRCodeGenLib
 
-### Test Resource Loading
+## Test Resource Loading
 
 [![Build Status](https://github.com/gcarreno/TestResourceLoading/workflows/build/badge.svg?branch=main)](https://github.com/gcarreno/TestResourceLoading/actions)
 [![Supports Windows](https://img.shields.io/badge/support-Windows-blue?logo=Windows)](https://github.com/gcarreno/TestResourceLoading/releases/latest)
@@ -152,7 +151,7 @@ Program to test two Lazarus QR Code generation libs, available on OPM:
 
 A simple example on how to load a file from the binary resources onto a `TMemo`
 
-### Test Restart Application
+## Test Restart Application
 
 [![Build Status](https://github.com/gcarreno/TestRestartApplication/workflows/build/badge.svg?branch=main)](https://github.com/gcarreno/TestRestartApplication/actions)
 [![Supports Windows](https://img.shields.io/badge/support-Windows-blue?logo=Windows)](https://github.com/gcarreno/TestRestartApplication/releases/latest)
@@ -179,7 +178,7 @@ Program to test a cross platform way of doing application restarting itself.
 
 Example of how to use the Class `TThread` and all of the threading tools available with Free Pascal.
 
-#### Single Thread, Single Instance
+### Single Thread, Single Instance
 
 This exemplifies the most basic use of a thread.
 
@@ -187,7 +186,7 @@ It declares an event to hook into the main form.
 
 This is a single shot use because we set the thread's `FreeOnTerminate` property to True.
 
-#### Single Thread, Many Instances
+### Single Thread, Many Instances
 
 The example above isn't of much use if we just run a single instance.
 
@@ -208,7 +207,7 @@ This is, **also**, a single shot use because we set the thread's `FreeOnTerminat
 
 Example of how to use the Class `TThread` with a pool manager.
 
-#### Credits
+### Credits
 
 Original Code: Andrew Thomas Brunner (http://www.aurawin.com)
 
