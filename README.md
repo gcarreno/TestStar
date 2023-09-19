@@ -4,7 +4,7 @@ A directory of all my Object Pascal Test repositories.
 
 I hope this will help someone with my captured knowledge on the below subjects.
 
-## Test Application Demo
+## ✨ Test Application Demo
 
 > [GitHub Repository](https://github.com/gcarreno/TestApplicationDemo)
 
@@ -19,14 +19,14 @@ It includes:
 - The use of `GetAppConfigFile()` to get the app's default file customised for Linux/Windows
 - A way to have different short cuts for exit in Linux(CTRL+Q) and Windows(ALT+X)
 
-## Test Download with Progress Bar
+## ✨ Test Download with Progress Bar
 
 > [GitHub Repository](https://github.com/gcarreno/TestDownloadProgressBar)
 
 
 Example of `fphttpclient` with a progress bar.
 
-## Test Google Translate
+## ✨ Test Google Translate
 
 > [GitHub Repository](https://github.com/gcarreno/TestGoogleTranslate)
 
@@ -41,7 +41,7 @@ Example of `fphttpclient` with a progress bar.
 
 Testing Google Translate with Lazarus/FPC.
 
-## Test HTML Viewers
+## ✨ Test HTML Viewers
 
 > [GitHub Repository](https://github.com/gcarreno/TestHTML)
 
@@ -55,7 +55,7 @@ I'm using the latest version available on the GitHub repository of [Bernd Gabrie
 
 But you can install the needed components from the Online Package Manager(OPM).
 
-## Test Lazarus Logging
+## ✨ Test Lazarus Logging
 
 > [GitHub Repository](https://github.com/gcarreno/TestLazarusLogging)
 
@@ -112,7 +112,7 @@ todo:
 
 For more information on this option: [TEventLog README](TEventLog/README.md)
 
-## Test Linux Distribution Information
+## ✨ Test Linux Distribution Information
 
 > [GitHub Repository](https://github.com/gcarreno/TestLinuxDistInfo)
 
@@ -130,7 +130,7 @@ Presents the options found and allows to query each one individually.
 
 ![Linux Dark Theme v0.1.1](https://github.com/gcarreno/TestLinuxDistInfo/raw/main/img/LinuxDarkTheme-v0.1.1.png)
 
-## Test Markdown
+## ✨ Test Markdown
 
 > [GitHub Repository](https://github.com/gcarreno/TestMarkdown)
 
@@ -147,7 +147,7 @@ Program to test 2 Markdown libraries:
 - [pasHTMLdown](https://github.com/BeRo1985/pashtmldown)
 - [delphi-markdown](https://github.com/grahamegrieve/delphi-markdown)
 
-## Test QR Code
+## ✨ Test QR Code
 
 > [GitHub Repository](https://github.com/gcarreno/TestQRCode)
 
@@ -157,7 +157,7 @@ Program to test two Lazarus QR Code generation libs, available on OPM:
 * LazBarcodes
 * QRCodeGenLib
 
-## Test Resource Loading
+## ✨ Test Resource Loading
 
 > [GitHub Repository](https://github.com/gcarreno/TestResourceLoading)
 
@@ -170,7 +170,7 @@ Program to test two Lazarus QR Code generation libs, available on OPM:
 
 A simple example on how to load a file from the binary resources onto a `TMemo`
 
-## Test Restart Application
+## ✨ Test Restart Application
 
 > [GitHub Repository](https://github.com/gcarreno/TestRestartApplication)
 
@@ -183,7 +183,7 @@ A simple example on how to load a file from the binary resources onto a `TMemo`
 
 Program to test a cross platform way of doing application restarting itself.
 
-## Test Thread Pool
+## ✨ Test Thread Pool
 
 > [GitHub Repository](https://github.com/gcarreno/TestThreadPool)
 
@@ -202,7 +202,7 @@ Original Code: Andrew Thomas Brunner (http://www.aurawin.com)
 
 Correcting Critical Section Lock: paweld (https://github.com/paweld)
 
-## Test Threading
+## ✨ Test Threading
 
 > [GitHub Repository](https://github.com/gcarreno/TestThreading)
 

@@ -49,14 +49,14 @@ class ReadmeGenerator
           $this->debug_log($star->name);
           $repo_url = "{$this->config->{"repo-base-url"}}/{$this->config->user}/{$star->repository}";
           $api_url = "{$this->config->{'api-base-url'}}/{$this->config->{'api-resource'}}/{$this->config->user}/{$star->repository}";
-          echo "## {$star->name}\n\n";
+          echo "## ✨ {$star->name}\n\n";
           echo "> [GitHub Repository]({$repo_url})\n\n";
           $readme_url = "{$repo_url}/raw/{$star->default_branch}/{$star->readme}";
           $this->debug_log("Fetching: {$readme_url}");
           $readme = file(
             $readme_url,
             false,
-            $context  
+            $this->context  
           );
           if(!$readme)
           {
