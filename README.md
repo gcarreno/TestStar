@@ -1,4 +1,4 @@
-# Test 🌟
+#  Test 🌟
 
 A directory of all my Object Pascal Test repositories.
 
@@ -6,9 +6,10 @@ I hope this will help someone with my captured knowledge on the below subjects.
 
 ## Test Application Demo
 
-- [GitHub Repository](https://github.com/gcarreno/TestApplicationDemo)
+> [GitHub Repository](https://github.com/gcarreno/TestApplicationDemo)
 
-A boiler plate on how to do Application config the "Lazarus Way ™".
+
+A boiler plate on how to do Application config the "Lazarus Way (tm)".
 
 It includes:
 
@@ -20,11 +21,15 @@ It includes:
 
 ## Test Download with Progress Bar
 
-- [GitHub Repository](https://github.com/gcarreno/TestDownloadProgressBar)
+> [GitHub Repository](https://github.com/gcarreno/TestDownloadProgressBar)
+
 
 Example of `fphttpclient` with a progress bar.
 
 ## Test Google Translate
+
+> [GitHub Repository](https://github.com/gcarreno/TestGoogleTranslate)
+
 
 [![Build Status](https://github.com/gcarreno/TestGoogleTranslate/workflows/build/badge.svg?branch=main)](https://github.com/gcarreno/TestGoogleTranslate/actions)
 [![Supports Windows](https://img.shields.io/badge/support-Windows-blue?logo=Windows)](https://github.com/gcarreno/TestGoogleTranslate/releases/latest)
@@ -34,14 +39,26 @@ Example of `fphttpclient` with a progress bar.
 [![Latest Release](https://img.shields.io/github/v/release/gcarreno/TestGoogleTranslate?label=latest%20release)](https://github.com/gcarreno/TestGoogleTranslate/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/gcarreno/TestGoogleTranslate/total)](https://github.com/gcarreno/TestGoogleTranslate/releases)
 
-- [GitHub Repository](https://github.com/gcarreno/TestGoogleTranslate)
-
-
 Testing Google Translate with Lazarus/FPC.
+
+## Test HTML Viewers
+
+> [GitHub Repository](https://github.com/gcarreno/TestHTML)
+
+[![Supports Windows](https://img.shields.io/badge/support-Windows-blue?logo=Windows)](https://github.com/gcarreno/TestHTML/releases/latest)
+[![Supprts Linux](https://img.shields.io/badge/support-Linux-yellow?logo=Linux)](https://github.com/gcarreno/TestHTML/releases/latest)
+[![License](https://img.shields.io/github/license/gcarreno/TestHTML)](https://github.com/gcarreno/TestHTML/blob/master/LICENSE)
+
+Program to test HTML Viewers.
+
+I'm using the latest version available on the GitHub repository of [Bernd Gabriel](https://github.com/BerndGabriel/HtmlViewer) and have it included in this repository.
+
+But you can install the needed components from the Online Package Manager(OPM).
 
 ## Test Lazarus Logging
 
-- [GitHub Repository](https://github.com/gcarreno/TestLazarusLogging)
+> [GitHub Repository](https://github.com/gcarreno/TestLazarusLogging)
+
 
 Repository to test and learn how to use the many logging choices in Lazarus
 
@@ -79,7 +96,7 @@ pros:
 cons:
 - Does not have multiple log providers
 
-For more information on this option: [LazLogger README](https://github.com/gcarreno/TestLazarusLogging/blob/main/LazLogger/README.md)
+For more information on this option: [LazLogger README](LazLogger/README.md)
 
 ### TEventLog
 
@@ -93,9 +110,11 @@ cons:
 todo:
 - Linux: Need to see if there is some difference geared towards a Linux system log
 
-For more information on this option: [TEventLog README](https://github.com/gcarreno/TestLazarusLogging/blob/main/TEventLog/README.md)
+For more information on this option: [TEventLog README](TEventLog/README.md)
 
 ## Test Linux Distribution Information
+
+> [GitHub Repository](https://github.com/gcarreno/TestLinuxDistInfo)
 
 [![Build Status](https://github.com/gcarreno/TestLinuxDistInfo/workflows/build/badge.svg?branch=main)](https://github.com/gcarreno/TestLinuxDistInfo/actions)
 [![Supports Linux](https://img.shields.io/badge/support-Linux-yellow?logo=Linux)](https://github.com/gcarreno/TestLinuxDistInfo/releases/latest)
@@ -103,17 +122,18 @@ For more information on this option: [TEventLog README](https://github.com/gcarr
 [![Latest Release](https://img.shields.io/github/v/release/gcarreno/TestLinuxDistInfo?label=latest%20release)](https://github.com/gcarreno/TestLinuxDistInfo/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/gcarreno/TestLinuxDistInfo/total)](https://github.com/gcarreno/TestLinuxDistInfo/releases)
 
-- [GitHub Repository](https://github.com/gcarreno/TestLinuxDistInfo)
-
 Searches for the various methods to obtain information about the current installed distro.
 
 Presents the options found and allows to query each one individually.
 
 ### Screenshot
 
-![Linux Dark Theme v0.1.1](https://github.com/gcarreno/TestLinuxDistInfo/blob/main/img/LinuxDarkTheme-v0.1.1.png)
+![Linux Dark Theme v0.1.1](https://github.com/gcarreno/TestLinuxDistInfo/raw/main/img/LinuxDarkTheme-v0.1.1.png)
 
 ## Test Markdown
+
+> [GitHub Repository](https://github.com/gcarreno/TestMarkdown)
+
 
 [![Build Status](https://github.com/gcarreno/TestMarkdown/workflows/build/badge.svg?branch=main)](https://github.com/gcarreno/TestMarkdown/actions)
 [![Supports Windows](https://img.shields.io/badge/support-Windows-blue?logo=Windows)](https://github.com/gcarreno/TestMarkdown/releases/latest)
@@ -122,8 +142,6 @@ Presents the options found and allows to query each one individually.
 [![Latest Release](https://img.shields.io/github/v/release/gcarreno/TestMarkdown?label=latest%20release)](https://github.com/gcarreno/TestMarkdown/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/gcarreno/TestMarkdown/total)](https://github.com/gcarreno/TestMarkdown/releases)
 
-- [GitHub Repository](https://github.com/gcarreno/TestMarkdown)
-
 Program to test 2 Markdown libraries:
 
 - [pasHTMLdown](https://github.com/BeRo1985/pashtmldown)
@@ -131,7 +149,8 @@ Program to test 2 Markdown libraries:
 
 ## Test QR Code
 
-- [GitHub Repository](https://github.com/gcarreno/TestQRCode)
+> [GitHub Repository](https://github.com/gcarreno/TestQRCode)
+
 
 Program to test two Lazarus QR Code generation libs, available on OPM:
 
@@ -140,6 +159,8 @@ Program to test two Lazarus QR Code generation libs, available on OPM:
 
 ## Test Resource Loading
 
+> [GitHub Repository](https://github.com/gcarreno/TestResourceLoading)
+
 [![Build Status](https://github.com/gcarreno/TestResourceLoading/workflows/build/badge.svg?branch=main)](https://github.com/gcarreno/TestResourceLoading/actions)
 [![Supports Windows](https://img.shields.io/badge/support-Windows-blue?logo=Windows)](https://github.com/gcarreno/TestResourceLoading/releases/latest)
 [![Supprts Linux](https://img.shields.io/badge/support-Linux-yellow?logo=Linux)](https://github.com/gcarreno/TestResourceLoading/releases/latest)
@@ -147,11 +168,11 @@ Program to test two Lazarus QR Code generation libs, available on OPM:
 [![Latest Release](https://img.shields.io/github/v/release/gcarreno/TestResourceLoading?label=latest%20release)](https://github.com/gcarreno/TestResourceLoading/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/gcarreno/TestResourceLoading/total)](https://github.com/gcarreno/TestResourceLoading/releases)
 
-- [GitHub Repository](https://github.com/gcarreno/TestResourceLoading)
-
 A simple example on how to load a file from the binary resources onto a `TMemo`
 
 ## Test Restart Application
+
+> [GitHub Repository](https://github.com/gcarreno/TestRestartApplication)
 
 [![Build Status](https://github.com/gcarreno/TestRestartApplication/workflows/build/badge.svg?branch=main)](https://github.com/gcarreno/TestRestartApplication/actions)
 [![Supports Windows](https://img.shields.io/badge/support-Windows-blue?logo=Windows)](https://github.com/gcarreno/TestRestartApplication/releases/latest)
@@ -160,11 +181,30 @@ A simple example on how to load a file from the binary resources onto a `TMemo`
 [![Latest Release](https://img.shields.io/github/v/release/gcarreno/TestRestartApplication?label=latest%20release)](https://github.com/gcarreno/TestRestartApplication/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/gcarreno/TestRestartApplication/total)](https://github.com/gcarreno/TestRestartApplication/releases)
 
-- [GitHub Repository](https://github.com/gcarreno/TestRestartApplication)
-
 Program to test a cross platform way of doing application restarting itself.
 
+## Test Thread Pool
+
+> [GitHub Repository](https://github.com/gcarreno/TestThreadPool)
+
+[![Supports Windows](https://img.shields.io/badge/support-Windows-blue?logo=Windows)](https://github.com/gcarreno/TestThreadPool/releases/latest)
+[![Supports Linux](https://img.shields.io/badge/support-Linux-yellow?logo=Linux)](https://github.com/gcarreno/TestThreadPool/releases/latest)
+[![Supports macOS](https://img.shields.io/badge/support-macOS-black?logo=macOS)](https://github.com/gcarreno/TestThreadPool/releases/latest)
+[![License](https://img.shields.io/github/license/gcarreno/TestThreadPool)](https://github.com/gcarreno/TestThreadPool/blob/master/LICENSE)
+[![Latest Release](https://img.shields.io/github/v/release/gcarreno/TestThreadPool?label=latest%20release)](https://github.com/gcarreno/TestThreadPool/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/gcarreno/TestThreadPool/total)](https://github.com/gcarreno/TestThreadPool/releases)
+
+Example of how to use the Class `TThread` with a pool manager.
+
+### Credits
+
+Original Code: Andrew Thomas Brunner (http://www.aurawin.com)
+
+Correcting Critical Section Lock: paweld (https://github.com/paweld)
+
 ## Test Threading
+
+> [GitHub Repository](https://github.com/gcarreno/TestThreading)
 
 [![Build Status](https://github.com/gcarreno/TestThreading/actions/workflows/main.lazarus.yml/badge.svg?branch=main)](https://github.com/gcarreno/TestThreading/actions)
 [![Supports Windows](https://img.shields.io/badge/support-Windows-blue?logo=Windows)](https://github.com/gcarreno/TestThreading/releases/latest)
@@ -173,8 +213,6 @@ Program to test a cross platform way of doing application restarting itself.
 [![License](https://img.shields.io/github/license/gcarreno/TestThreading)](https://github.com/gcarreno/TestThreading/blob/master/LICENSE)
 [![Latest Release](https://img.shields.io/github/v/release/gcarreno/TestThreading?label=latest%20release)](https://github.com/gcarreno/TestThreading/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/gcarreno/TestThreading/total)](https://github.com/gcarreno/TestThreading/releases)
-
-- [GitHub Repository](https://github.com/gcarreno/TestThreading)
 
 Example of how to use the Class `TThread` and all of the threading tools available with Free Pascal.
 
@@ -194,21 +232,3 @@ In this example we create multiple instances of the same thread and we start the
 
 This is, **also**, a single shot use because we set the thread's `FreeOnTerminate` property to True.
 
-## Test Thread Pool
-
-[![Supports Windows](https://img.shields.io/badge/support-Windows-blue?logo=Windows)](https://github.com/gcarreno/TestThreadPool/releases/latest)
-[![Supports Linux](https://img.shields.io/badge/support-Linux-yellow?logo=Linux)](https://github.com/gcarreno/TestThreadPool/releases/latest)
-[![Supports macOS](https://img.shields.io/badge/support-macOS-black?logo=macOS)](https://github.com/gcarreno/TestThreadPool/releases/latest)
-[![License](https://img.shields.io/github/license/gcarreno/TestThreadPool)](https://github.com/gcarreno/TestThreadPool/blob/master/LICENSE)
-[![Latest Release](https://img.shields.io/github/v/release/gcarreno/TestThreadPool?label=latest%20release)](https://github.com/gcarreno/TestThreadPool/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/gcarreno/TestThreadPool/total)](https://github.com/gcarreno/TestThreadPool/releases)
-
-- [GitHub Repository](https://github.com/gcarreno/TestThreadPool)
-
-Example of how to use the Class `TThread` with a pool manager.
-
-### Credits
-
-Original Code: Andrew Thomas Brunner (http://www.aurawin.com)
-
-Correcting Critical Section Lock: paweld (https://github.com/paweld)
