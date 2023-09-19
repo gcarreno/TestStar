@@ -1,105 +1,122 @@
 #!/usr/bin/env php
 <?php
 
-$opts = [
-  'http' => [
-    'method' => 'GET',
-//    'ignore_errors' => true,
-    'header' => [
-      'User-Agent: PHP'
-    ]
-  ]
-];
-$context = stream_context_create($opts);
 
-$conf = json_decode(
-  file_get_contents("teststar.conf"),
-  false
-);
-
-function debug_log(string $message)
+class ReadmeGenerator
 {
-  $message = trim($message);
-  fwrite(STDERR, "======== {$message}\n");
-};
-function cmp($a, $b) {
+  private $context;
+  private $config;
+  
+  private function compare($a, $b)
+  {
     return strcmp($a->name, $b->name);
+  }
+  
+  private function debug_log(string $message)
+  {
+    $message = trim($message);
+    fwrite(STDERR, "======== {$message}\n");
+  }
+  
+  public function __construct($config_file)
+  {
+    $this->context = stream_context_create([
+      'http' => [
+        'method' => 'GET',
+        'header' => [
+          'User-Agent: PHP'
+        ]
+      ]
+    ]);
+
+    $this->config = json_decode(
+      file_get_contents($config_file),
+      false
+    );
+  }
+
+  public function run()
+  {
+    switch (json_last_error()) 
+    {
+      case JSON_ERROR_NONE:
+        $this->debug_log("Starting");
+        echo "# {$this->config->name}\n\n";
+        echo "{$this->config->description}\n\n";
+        usort($this->config->stars, [ReadmeGenerator::class, "compare"]);
+        foreach ($this->config->stars as $star)
+        {
+          $this->debug_log($star->name);
+          $repo_url = "{$this->config->{"repo-base-url"}}/{$this->config->user}/{$star->repository}";
+          $api_url = "{$this->config->{'api-base-url'}}/{$this->config->{'api-resource'}}/{$this->config->user}/{$star->repository}";
+          echo "## {$star->name}\n\n";
+          echo "> [GitHub Repository]({$repo_url})\n\n";
+          $readme_url = "{$repo_url}/raw/{$star->default_branch}/{$star->readme}";
+          $this->debug_log("Fetching: {$readme_url}");
+          $readme = file(
+            $readme_url,
+            false,
+            $context  
+          );
+          if(!$readme)
+          {
+            $this->debug_log("ERROR - Fetching {$readme_url}");
+            break;
+          }
+          foreach($readme as $line)
+          {
+            if (!str_starts_with($line, "# "))
+            {
+              if (str_starts_with($line, "#"))
+              {
+                echo "#{$line}";
+              }
+              else
+              {
+                if (str_contains($line, "![") && !str_contains($line, "http"))
+                {
+                    $this->debug_log("Image: {$line}");
+                    $line = preg_replace("/(.*)(\!\[.+\])\s*\((.+)\)(.*)/", "$1$2({$repo_url}/raw/{$star->default_branch}/$3)$4", $line);
+                    echo $line;
+                    $this->debug_log("Image: {$line}");
+                }
+                elseif (str_ends_with($line, "\n"))
+                {
+                  echo $line;
+                }
+                else
+                {
+                  echo "$line\n";
+                }
+              }
+            }
+          }
+          echo "\n";
+          sleep(1);
+        }
+        break;
+      case JSON_ERROR_DEPTH:
+        $this->debug_log('ERROR - Maximum stack depth exceeded');
+        break;
+      case JSON_ERROR_STATE_MISMATCH:
+        $this->debug_log('ERROR - Underflow or the modes mismatch');
+        break;
+      case JSON_ERROR_CTRL_CHAR:
+        $this->debug_log('ERROR - Unexpected control character found');
+        break;
+      case JSON_ERROR_SYNTAX:
+        $this->debug_log('ERROR - Syntax error, malformed JSON');
+        break;
+      case JSON_ERROR_UTF8:
+        $this->debug_log('ERROR - Malformed UTF-8 characters, possibly incorrectly encoded');
+        break;
+      default:
+        $this->debug_log('ERROR - Unknown error');
+        break;
+    }
+  }
 }
 
-switch (json_last_error()) 
-{
-  case JSON_ERROR_NONE:
-    debug_log("Starting");
-    echo "# {$conf->name}\n\n";
-    echo "{$conf->description}\n\n";
-    usort($conf->stars, "cmp");
-    foreach ($conf->stars as $star)
-    {
-      debug_log($star->name);
-      $repo_url = "{$conf->{"repo-base-url"}}/{$conf->user}/{$star->repository}";
-      $api_url = "{$conf->{'api-base-url'}}/{$conf->{'api-resource'}}/{$conf->user}/{$star->repository}";
-      echo "## {$star->name}\n\n";
-      echo "> [GitHub Repository]({$repo_url})\n\n";
-      $readme_url = "{$repo_url}/raw/{$star->default_branch}/{$star->readme}";
-      debug_log("Fetching: {$readme_url}");
-      $readme = file(
-        $readme_url,
-        false,
-        $context  
-      );
-      if(!$readme)
-      {
-        debug_log("ERROR - Fetching {$readme_url}");
-        break;
-      }
-      foreach($readme as $line)
-      {
-        if (!str_starts_with($line, "# "))
-        {
-          if (str_starts_with($line, "#"))
-          {
-            echo "#{$line}";
-          }
-          else
-          {
-            if (str_contains($line, "![") && !str_contains($line, "http"))
-            {
-                debug_log("Image: {$line}");
-                $line = preg_replace("/(.*)(\!\[.+\])\s*\((.+)\)(.*)/", "$1$2({$repo_url}/raw/{$star->default_branch}/$3)$4", $line);
-                echo $line;
-                debug_log("Image: {$line}");
-            }
-            elseif (str_ends_with($line, "\n"))
-            {
-              echo $line;
-            }
-            else
-            {
-              echo "$line\n";
-            }
-          }
-        }
-      }
-      echo "\n";
-      sleep(1);
-    }
-    break;
-  case JSON_ERROR_DEPTH:
-    debug_log('ERROR - Maximum stack depth exceeded');
-    break;
-  case JSON_ERROR_STATE_MISMATCH:
-    debug_log('ERROR - Underflow or the modes mismatch');
-    break;
-  case JSON_ERROR_CTRL_CHAR:
-    debug_log('ERROR - Unexpected control character found');
-    break;
-  case JSON_ERROR_SYNTAX:
-    debug_log('ERROR - Syntax error, malformed JSON');
-    break;
-  case JSON_ERROR_UTF8:
-    debug_log('ERROR - Malformed UTF-8 characters, possibly incorrectly encoded');
-    break;
-  default:
-    debug_log('ERROR - Unknown error');
-    break;
-}
+$gen = new ReadmeGenerator("teststar.json");
+$gen->run();
+
