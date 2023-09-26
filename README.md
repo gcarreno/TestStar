@@ -147,6 +147,17 @@ Program to test 2 Markdown libraries:
 - [pasHTMLdown](https://github.com/BeRo1985/pashtmldown)
 - [delphi-markdown](https://github.com/grahamegrieve/delphi-markdown)
 
+## ✨ Test Memory Dataset
+
+> [GitHub Repository](https://github.com/gcarreno/TestMemoryDataset)
+
+
+An application to demonstrate how to use `TMemDataset`.
+
+This particular component does not have a feature to sort the data.
+
+It does, however, have a feature to filter the data.
+
 ## ✨ Test QR Code
 
 > [GitHub Repository](https://github.com/gcarreno/TestQRCode)

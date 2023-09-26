@@ -77,6 +77,12 @@
       "repository": "TestHTML",
       "default_branch": "main",
       "readme": "README.md"
+    },
+    {
+      "name": "Test Memory Dataset",
+      "repository": "TestMemoryDataset",
+      "default_branch": "main",
+      "readme": "README.md"
     }
   ]
 }
