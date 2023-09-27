@@ -194,6 +194,19 @@ A simple example on how to load a file from the binary resources onto a `TMemo`
 
 Program to test a cross platform way of doing application restarting itself.
 
+## ✨ Test RxMemoryData
+
+> [GitHub Repository](https://github.com/gcarreno/TestRxMemoryData)
+
+
+An application to demonstrate how to use `TRxMemoryData`.
+
+This particular component does not have a feature to sort the data.
+
+It does, however, have a feature to filter the data.
+
+Also using the `TRxDBGrid` for the visualization of the data, since I'm already using the RX package.
+
 ## ✨ Test Thread Pool
 
 > [GitHub Repository](https://github.com/gcarreno/TestThreadPool)

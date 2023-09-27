@@ -83,6 +83,12 @@
       "repository": "TestMemoryDataset",
       "default_branch": "main",
       "readme": "README.md"
+    },
+    {
+      "name": "Test RxMemoryData",
+      "repository": "TestRxMemoryData",
+      "default_branch": "main",
+      "readme": "README.md"
     }
   ]
 }
