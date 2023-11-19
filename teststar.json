@@ -85,6 +85,12 @@
       "readme": "README.md"
     },
     {
+      "name": "Test GNU DB Manager",
+      "repository": "TestGNUDBM",
+      "default_branch": "main",
+      "readme": "README.md"
+    },
+    {
       "name": "Test RxMemoryData",
       "repository": "TestRxMemoryData",
       "default_branch": "main",
