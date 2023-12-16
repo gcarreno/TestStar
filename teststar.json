@@ -95,6 +95,12 @@
       "repository": "TestRxMemoryData",
       "default_branch": "main",
       "readme": "README.md"
+    },
+    {
+      "name": "Test IP Scanner",
+      "repository": "TestIPScanner",
+      "default_branch": "main",
+      "readme": "README.md"
     }
   ]
 }
