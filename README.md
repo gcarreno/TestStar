@@ -87,6 +87,8 @@ But you can install the needed components from the Online Package Manager(OPM).
 
 An attempt to do a graphical application to scan a range of IPs and some other tools.
 
+This entry on the [Test 🌟](https://github.com/gcarreno/TestStar) list is inspired by this repository: [IPAvailabilityScanner](https://github.com/vrwallace/IPAvailabilityScanner).
+
 It implements:
 1. Retrieving the machine's Public IP address from one of these providers:
     - http://ifconfig.me
@@ -97,7 +99,19 @@ It implements:
 3. Performing a Ping ( Not Implemented yet ).
 4. Performing a Trace Route ( Not Implemented yet ).
 
-This entry on the [Test 🌟](https://github.com/gcarreno/TestStar) list is inspired by this repository: [IPAvailabilityScanner](https://github.com/vrwallace/IPAvailabilityScanner).
+This application is also using the Property Storage on an `INI` file. It stores the size of the Window and some values like the last selected tab and the last inputs on several edits.
+
+### Important Details
+
+#### Linux
+
+In order to perform a Ping the packet needs to be in raw mode. This implies it needs super user permissions.
+
+If you want Ping and TraceRoute to work you must run the program with `sudo`:
+
+```console
+$ sudo bin/TestIPScanner
+```
 
 ## ✨ Test Lazarus Logging
 
