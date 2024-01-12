@@ -1,6 +1,4 @@
-#  Test 🌟
-
-A directory of all my Object Pascal Test repositories.
+<p align="center"><img src="https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&text=Test%20🌟&reversal=true&desc=A%20directory%20of%20all%20my%20Object%20Pascal%20Test%20repositories" /></p>
 
 I hope this will help someone with my captured knowledge on the below subjects.
 
@@ -113,6 +111,21 @@ If you want Ping and TraceRoute to work you must run the program with `sudo`:
 $ sudo bin/TestIPScanner
 ```
 
+#### Windows
+
+This has been tested under Windows 11 and it is working on both non and "Run as User".
+
+Many thanks to [ikel](https://github.com/ikelaiah) for doing the tests.
+
+#### macOS
+
+I'm unable to test under macOS so I'll need some help here.
+
+### Known bugs
+
+- The IP Edit component needs to be focused in order to refresh internal fields right after starting up the application.
+    For some reason, when the `TINIPropStorage` fills in the `TIPEdit.Text` property, the component does not refresh the internal fields.
+
 ## ✨ Test Lazarus Logging
 
 > [GitHub Repository](https://github.com/gcarreno/TestLazarusLogging)
@@ -210,6 +223,14 @@ Program to test 2 Markdown libraries:
 > [GitHub Repository](https://github.com/gcarreno/TestMemoryDataset)
 
 
+[![Build Status](https://github.com/gcarreno/TestMemoryDataset/actions/workflows/main.lazarus.yml/badge.svg?branch=main)](https://github.com/gcarreno/TestMemoryDataset/actions)
+[![Supports Windows](https://img.shields.io/badge/support-Windows-blue?logo=Windows)](https://github.com/gcarreno/TestMemoryDataset/releases/latest)
+[![Supprts Linux](https://img.shields.io/badge/support-Linux-yellow?logo=Linux)](https://github.com/gcarreno/TestMemoryDataset/releases/latest)
+[![Supports macOS](https://img.shields.io/badge/support-macOS-black?logo=macOS)](https://github.com/gcarreno/TestMemoryDataset/releases/latest)
+[![License](https://img.shields.io/github/license/gcarreno/TestMemoryDataset)](https://github.com/gcarreno/TestMemoryDataset/blob/main/LICENSE)
+[![Latest Release](https://img.shields.io/github/v/release/gcarreno/TestMemoryDataset?label=latest%20release)](https://github.com/gcarreno/TestMemoryDataset/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/gcarreno/TestMemoryDataset/total)](https://github.com/gcarreno/TestMemoryDataset/releases)
+
 An application to demonstrate how to use `TMemDataset`.
 
 This particular component does not have a feature to sort the data.
@@ -256,6 +277,14 @@ Program to test a cross platform way of doing application restarting itself.
 
 > [GitHub Repository](https://github.com/gcarreno/TestRxMemoryData)
 
+
+[![Build Status](https://github.com/gcarreno/TestRXMemoryDataset/actions/workflows/main.lazarus.yml/badge.svg?branch=main)](https://github.com/gcarreno/TestRXMemoryDataset/actions)
+[![Supports Windows](https://img.shields.io/badge/support-Windows-blue?logo=Windows)](https://github.com/gcarreno/TestRXMemoryDataset/releases/latest)
+[![Supprts Linux](https://img.shields.io/badge/support-Linux-yellow?logo=Linux)](https://github.com/gcarreno/TestRXMemoryDataset/releases/latest)
+[![Supports macOS](https://img.shields.io/badge/support-macOS-black?logo=macOS)](https://github.com/gcarreno/TestRXMemoryDataset/releases/latest)
+[![License](https://img.shields.io/github/license/gcarreno/TestRXMemoryDataset)](https://github.com/gcarreno/TestRXMemoryDataset/blob/main/LICENSE)
+[![Latest Release](https://img.shields.io/github/v/release/gcarreno/TestRXMemoryDataset?label=latest%20release)](https://github.com/gcarreno/TestRXMemoryDataset/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/gcarreno/TestRXMemoryDataset/total)](https://github.com/gcarreno/TestRXMemoryDataset/releases)
 
 An application to demonstrate how to use `TRxMemoryData`.
 
@@ -314,3 +343,4 @@ In this example we create multiple instances of the same thread and we start the
 
 This is, **also**, a single shot use because we set the thread's `FreeOnTerminate` property to True.
 
+<p align="center"><img src="https://capsule-render.vercel.app/api?type=waving&height=100&color=gradient&reversal=true&section=footer" /></p>

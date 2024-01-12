@@ -41,7 +41,7 @@ class ReadmeGenerator
     {
       case JSON_ERROR_NONE:
         $this->debug_log("Starting");
-        echo "# {$this->config->name}\n\n";
+        echo "{$this->config->name}\n\n";
         echo "{$this->config->description}\n\n";
         usort($this->config->stars, [ReadmeGenerator::class, "compare"]);
         foreach ($this->config->stars as $star)
@@ -94,6 +94,7 @@ class ReadmeGenerator
           echo "\n";
           sleep(1);
         }
+        echo "{$this->config->footer}\n";
         break;
       case JSON_ERROR_DEPTH:
         $this->debug_log('ERROR - Maximum stack depth exceeded');

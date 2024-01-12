@@ -1,6 +1,7 @@
 {
-  "name": " Test 🌟",
-  "description": "A directory of all my Object Pascal Test repositories.\n\nI hope this will help someone with my captured knowledge on the below subjects.",
+  "name": "<p align=\"center\"><img src=\"https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&text=Test%20🌟&reversal=true&desc=A%20directory%20of%20all%20my%20Object%20Pascal%20Test%20repositories\" /></p>",
+  "description": "I hope this will help someone with my captured knowledge on the below subjects.",
+  "footer": "<p align=\"center\"><img src=\"https://capsule-render.vercel.app/api?type=waving&height=100&color=gradient&reversal=true&section=footer\" /></p>",
   "repo-base-url": "https://github.com",
   "api-base-url": "https://api.github.com",
   "api-resource": "repos",
