@@ -102,6 +102,12 @@
       "repository": "TestIPScanner",
       "default_branch": "main",
       "readme": "README.md"
+    },
+    {
+      "name": "Test Random Generation",
+      "repository": "TestRandomGeneration",
+      "default_branch": "main",
+      "readme": "README.md"
     }
   ]
 }
