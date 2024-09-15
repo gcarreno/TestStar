@@ -108,6 +108,12 @@
       "repository": "TestRandomGeneration",
       "default_branch": "main",
       "readme": "README.md"
+    },
+    {
+      "name": "Test Peer-to-Peer",
+      "repository": "TestPeer-to-Peer",
+      "default_branch": "main",
+      "readme": "README.md"
     }
   ]
 }
