@@ -70,6 +70,22 @@ I'm using the latest version available on the GitHub repository of [Bernd Gabrie
 
 But you can install the needed components from the Online Package Manager(OPM).
 
+## ✨ Test Hook To OS Signals
+
+> [GitHub Repository](https://github.com/gcarreno/TestHookToOSSignals)
+
+[![Build Status](https://github.com/gcarreno/TestHookToOSSignals/actions/workflows/main.yaml/badge.svg?branch=main)](https://github.com/gcarreno/TestHookToOSSignals/actions)
+[![Supports Windows](https://img.shields.io/badge/support-Windows-blue?logo=Windows)](https://github.com/gcarreno/TestHookToOSSignals/releases/latest)
+[![Supports Linux](https://img.shields.io/badge/support-Linux-yellow?logo=Linux)](https://github.com/gcarreno/TestHookToOSSignals/releases/latest)
+[![Supports macOS](https://img.shields.io/badge/support-macOS-black?logo=macOS)](https://github.com/gcarreno/TestHookToOSSignals/releases/latest)
+[![License](https://img.shields.io/github/license/gcarreno/TestHookToOSSignals)](https://github.com/gcarreno/TestHookToOSSignals/blob/main/LICENSE)
+[![Latest Release](https://img.shields.io/github/v/release/gcarreno/TestHookToOSSignals?label=latest%20release)](https://github.com/gcarreno/TestHookToOSSignals/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/gcarreno/TestHookToOSSignals/total)](https://github.com/gcarreno/TestHookToOSSignals/releases)
+
+This is an example on how to hook to some of the Operating System's signal like `Interrupt` and/or `Kill`.
+
+It's done in a `CLI` format, since it kinda only makes sense in said format.
+
 ## ✨ Test IP Scanner
 
 > [GitHub Repository](https://github.com/gcarreno/TestIPScanner)
@@ -255,10 +271,13 @@ Just a simple message exchange protocol in a `P2P` context.
 
 ### Todo
 
+- The `TPeer` class, at the moment, does not need to be a thread
 - Hook up event for data received from connection thread to the internal peer method
 - Add a property to allow hooking to data received from outside of the peer
 - Hook up event for connection removal from connection thread to peer
 - Understand if a connection needs to be disconnected when being removed
+- Implement command line switch `--connect-to`
+- Ponder having a Ping/Pong immediately before a connection is about to timeout
 
 ## ✨ Test QR Code
 

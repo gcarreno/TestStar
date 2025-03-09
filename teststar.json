@@ -114,6 +114,12 @@
       "repository": "TestPeer-to-Peer",
       "default_branch": "main",
       "readme": "README.md"
+    },
+    {
+      "name": "Test Hook To OS Signals",
+      "repository": "TestHookToOSSignals",
+      "default_branch": "main",
+      "readme": "README.md"
     }
   ]
 }
