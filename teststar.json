@@ -120,6 +120,12 @@
       "repository": "TestHookToOSSignals",
       "default_branch": "main",
       "readme": "README.md"
+    },
+    {
+      "name": "Test Read Firefox Cookies",
+      "repository": "TestReadFirefoxCookies",
+      "default_branch": "main",
+      "readme": "README.md"
     }
   ]
 }
