@@ -126,6 +126,12 @@
       "repository": "TestReadFirefoxCookies",
       "default_branch": "main",
       "readme": "README.md"
+    },
+    {
+      "name": "Test Regular Expressions",
+      "repository": "TestRegularExpressions",
+      "default_branch": "main",
+      "readme": "README.md"
     }
   ]
 }
